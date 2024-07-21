@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="div1">
+    <input type="text" v-model="name">
+    <h1 :style="{ textDecoration: decoration }">Hello {{name}} !</h1>
+    <br>
+    <a :href="link">Acesse o github</a>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+export default{
+  data: ()=> ({
+    name: 'Miguel',
+    link: 'https://github.com',
+    decoration: 'underline'
+  })
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+.div1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, bold
 }
 </style>
+
