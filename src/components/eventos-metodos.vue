@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Diretivas</h1>
+    <h1 class="h1color">Eventos e Metodos</h1>
     <h2>Minha lista de tarefas!</h2>
     <button @click="handlerShowHideList">Ver minha lista!</button>
     <br />
@@ -80,4 +80,7 @@ export default {
     cursor: pointer;
   }
 
+  .h1color{
+    color: rgb(70, 187, 75);
+  }
 </style>

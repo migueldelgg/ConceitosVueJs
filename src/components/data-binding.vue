@@ -1,5 +1,5 @@
 <template>
-    <div class="div1">
+    <div>
       <input type="text" v-model="name">
       <h1 :style="{ textDecoration: decoration }">Hello {{name}} !</h1>
       <br>
@@ -18,10 +18,6 @@
   </script>
   
   <style>
-  
-  .div1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, bold
-  }
   </style>
   
   

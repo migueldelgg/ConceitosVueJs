@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Diretivas</h1>
+    <h1 class="h1color" :v-model="tituloObj">{{ tituloObj }}</h1>
     <h2>Minha lista de tarefas!</h2>
     <button @click="() => (showList = !showList)">Ver minha lista!</button>
     <br />
@@ -15,7 +15,7 @@
   </div>
 </template>
   
-  <script>
+<script>
 const focus = {
   mounted(el) {
     el.focus();
@@ -28,8 +28,16 @@ export default {
   },
   name: "DiretivasVue",
   data: () => ({
+    tituloObj: "Diretivas",
     showList: false,
     tasks: [{ name: "Fazer o Curso", isDone: false }],
   }),
 };
 </script>
+
+<style scoped>
+.h1color {
+  color: rgb(244, 78, 78)
+}
+
+</style>
